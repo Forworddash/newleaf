@@ -47,6 +47,79 @@
     items.forEach(function (el) { el.classList.add('in'); });
   }
 
+  // Hero terminal: types out a short "session"
+  var term = document.getElementById('terminal');
+  if (term) {
+    var script = [
+      { cmd: 'newleaf launch website --pages 5' },
+      { out: '  building mobile-friendly pages ...', cls: 't-dim' },
+      { out: '  adding click-to-call, map & booking form ...', cls: 't-dim' },
+      { out: '✓ live at https://yourbusiness.com', cls: 't-ok' },
+      { cmd: 'newleaf setup email --domain yourbusiness.com' },
+      { out: '✓ you@yourbusiness.com ready (SPF · DKIM · DMARC)', cls: 't-ok' },
+      { cmd: 'newleaf automate quote → booking → invoice' },
+      { out: '✓ automation running · ~6 hrs/week saved', cls: 't-ok' },
+      { cmd: '' }
+    ];
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    term.innerHTML = '';
+
+    var line = function (html) {
+      var p = document.createElement('p');
+      p.innerHTML = html;
+      term.appendChild(p);
+      return p;
+    };
+    var esc = function (s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;'); };
+
+    if (reduce) {
+      script.forEach(function (s) {
+        if ('cmd' in s) line('<span class="t-prompt">$</span>' + esc(s.cmd));
+        else line('<span class="' + s.cls + '">' + esc(s.out) + '</span>');
+      });
+    } else {
+      var i = 0;
+      var next = function () {
+        if (i >= script.length) return;
+        var s = script[i++];
+        if ('cmd' in s) {
+          var p = line('<span class="t-prompt">$</span><span class="typed"></span><span class="cursor"></span>');
+          var typed = p.querySelector('.typed');
+          var c = 0;
+          var type = function () {
+            if (c < s.cmd.length) {
+              typed.textContent += s.cmd[c++];
+              setTimeout(type, 28 + Math.random() * 40);
+            } else if (i < script.length) {
+              p.querySelector('.cursor').remove();
+              setTimeout(next, 350);
+            }
+          };
+          setTimeout(type, 400);
+        } else {
+          line('<span class="' + s.cls + '">' + esc(s.out) + '</span>');
+          setTimeout(next, s.cls === 't-ok' ? 500 : 380);
+        }
+      };
+      // Start typing when the terminal scrolls into view
+      if ('IntersectionObserver' in window) {
+        var tio = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) { tio.disconnect(); next(); }
+        }, { threshold: 0.3 });
+        tio.observe(term);
+      } else { next(); }
+    }
+  }
+
+  // Cursor-follow glow on service tiles
+  document.querySelectorAll('.tile').forEach(function (tile) {
+    tile.addEventListener('pointermove', function (e) {
+      var r = tile.getBoundingClientRect();
+      tile.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+      tile.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+
   // Buttons with data-interest pre-select the form dropdown
   var interest = document.getElementById('interest');
   document.querySelectorAll('[data-interest]').forEach(function (btn) {

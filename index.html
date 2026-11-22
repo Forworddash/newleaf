@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>New Leaf Software | Websites, Automations &amp; Admin for Small Businesses</title>
-  <meta name="description" content="New Leaf Software builds fast, mobile-friendly websites, automates repetitive business tasks, and handles the technical admin like business email and HTTPS, so you can get back to running your business.">
-  <meta name="theme-color" content="#0f3d2a">
+  <meta name="description" content="New Leaf Software builds fast websites, automates repetitive business tasks, and handles the technical admin like business email and HTTPS, so you can get back to running your business.">
+  <meta name="theme-color" content="#070d0a">
+  <meta name="color-scheme" content="dark">
 
-  <!-- Open Graph (update the URL once you have your domain) -->
   <meta property="og:title" content="New Leaf Software">
   <meta property="og:description" content="Websites, automations and technical admin for small businesses.">
   <meta property="og:type" content="website">
@@ -16,7 +16,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -27,11 +27,10 @@
     <div class="container nav">
       <a href="#top" class="brand" aria-label="New Leaf Software home">
         <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-          <rect width="32" height="32" rx="9" fill="currentColor"/>
-          <path d="M9 23c0-8 5-13 14-14-.5 9-5.5 14-14 14Z" fill="#b7f26b"/>
-          <path d="M9 23l8-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M6 26C6 14 13 6 27 5c-1 14-8 21-21 21Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M6 26 18 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
         </svg>
-        <span>New Leaf <strong>Software</strong></span>
+        <span>newleaf<span class="brand-dim">.software</span></span>
       </a>
 
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
@@ -42,10 +41,10 @@
         <a href="#services">Services</a>
         <a href="#founding">Founding offer</a>
         <a href="#pricing">Pricing</a>
-        <a href="#process">How it works</a>
+        <a href="#process">Process</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
-        <a href="#contact" class="btn btn-primary btn-sm">Get in touch</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Start a project <span aria-hidden="true">&rarr;</span></a>
       </nav>
     </div>
   </header>
@@ -54,199 +53,179 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span class="dot"></span> Now taking 2 founding clients</p>
-          <h1>Turn over a new leaf<br>for your <span class="highlight">business tech.</span></h1>
-          <p class="lead">
-            We build fast, mobile-friendly websites, automate the repetitive tasks that eat your week,
-            and handle the technical admin: business email, domains, HTTPS. You get back to the work that matters.
-          </p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary btn-lg">Book a free consultation</a>
-            <a href="#pricing" class="btn btn-ghost btn-lg">See pricing &rarr;</a>
-          </div>
-          <ul class="hero-points">
-            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7"/></svg>Flat, upfront pricing</li>
-            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7"/></svg>Plain-English communication</li>
-            <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3 3 7-7"/></svg>You own everything we build</li>
-          </ul>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <a href="#founding" class="announce reveal">
+          <span class="announce-tag">NEW</span>
+          2 free founding-client websites available
+          <span aria-hidden="true">&rarr;</span>
+        </a>
+
+        <h1 class="reveal">
+          Your business,<br>
+          <span class="grad">running on autopilot.</span>
+        </h1>
+
+        <p class="lead reveal">
+          Websites that win customers. Automations that kill busywork. Tech admin (email, domains,
+          HTTPS) handled properly, the first time. Built for small businesses, explained in plain English.
+        </p>
+
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn btn-primary btn-lg">Book a free consultation</a>
+          <a href="#pricing" class="btn btn-ghost btn-lg"><span class="mono">$</span> view pricing</a>
         </div>
 
-        <!-- Visual: a mock dashboard showing an automation run -->
-        <div class="hero-visual reveal" aria-hidden="true">
-          <div class="window">
-            <div class="window-bar">
-              <span></span><span></span><span></span>
-              <p>automation &middot; new-quote-request</p>
-            </div>
-            <div class="flow">
-              <div class="flow-step done">
-                <div class="flow-icon">
-                  <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
-                </div>
-                <div><b>Quote request received</b><small>From website form &middot; 09:14</small></div>
-                <span class="tick">&#10003;</span>
-              </div>
-              <div class="flow-line"></div>
-              <div class="flow-step done">
-                <div class="flow-icon">
-                  <svg viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/></svg>
-                </div>
-                <div><b>Quote generated &amp; sent</b><small>PDF + booking link &middot; 09:14</small></div>
-                <span class="tick">&#10003;</span>
-              </div>
-              <div class="flow-line"></div>
-              <div class="flow-step done">
-                <div class="flow-icon">
-                  <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
-                </div>
-                <div><b>Job booked</b><small>Added to calendar &middot; 10:02</small></div>
-                <span class="tick">&#10003;</span>
-              </div>
-              <div class="flow-line"></div>
-              <div class="flow-step active">
-                <div class="flow-icon">
-                  <svg viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg>
-                </div>
-                <div><b>Invoice &amp; payment link</b><small>Sends when job is marked done</small></div>
-                <span class="pulse"></span>
-              </div>
-            </div>
-            <div class="window-foot">
-              <div><b>6.5 hrs</b><small>saved this week</small></div>
-              <div><b>0</b><small>manual copy-paste</small></div>
-              <div><b>100%</b><small>on HTTPS</small></div>
-            </div>
+        <!-- Terminal (lines are typed out by script.js) -->
+        <div class="terminal reveal" aria-hidden="true">
+          <div class="terminal-bar">
+            <span></span><span></span><span></span>
+            <p>~/your-business</p>
           </div>
-
-          <div class="float-card float-a">
-            <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-            <div><b>HTTPS active</b><small>Certificate auto-renews</small></div>
-          </div>
-          <div class="float-card float-b">
-            <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
-            <div><b>you@yourbusiness.com</b><small>Business email ready</small></div>
+          <div class="terminal-body" id="terminal">
+            <noscript>
+              <p><span class="t-prompt">$</span> newleaf launch website</p>
+              <p class="t-ok">&#10003; 5 pages live on yourbusiness.com</p>
+            </noscript>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ TRUST STRIP ============ -->
+    <!-- ============ STATS STRIP ============ -->
     <section class="strip">
-      <div class="container strip-inner">
-        <p>Built for small businesses that want to:</p>
-        <ul>
-          <li>Look professional online</li>
-          <li>Win more calls &amp; bookings</li>
-          <li>Stop doing admin by hand</li>
-          <li>Never worry about tech again</li>
-        </ul>
+      <div class="container strip-grid">
+        <div class="reveal"><b>Flat</b><span>upfront pricing, no hourly surprises</span></div>
+        <div class="reveal"><b>100%</b><span>yours: domain, code &amp; data</span></div>
+        <div class="reveal"><b>1 day</b><span>reply time on every enquiry</span></div>
+        <div class="reveal"><b>0</b><span>jargon. We speak plain English</span></div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
+    <!-- ============ SERVICES (BENTO) ============ -->
     <section class="section" id="services">
       <div class="container">
         <header class="section-head reveal">
-          <p class="kicker">What we do</p>
-          <h2>Three ways we make your business run smoother</h2>
-          <p>From a site customers can find to the systems running behind it, we handle the tech so you don't have to.</p>
+          <p class="kicker">// services</p>
+          <h2>Everything your business needs to run online</h2>
         </header>
 
-        <div class="cards-3">
-          <article class="card service reveal">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18M8 21h8M12 18v3"/></svg>
+        <div class="bento">
+          <!-- Websites: large -->
+          <article class="tile tile-web reveal">
+            <div class="tile-copy">
+              <p class="tile-label"><span class="ico">&#9635;</span> Websites</p>
+              <h3>Sites that make the phone ring</h3>
+              <p>Fast, mobile-first websites with click-to-call, maps, hours and booking forms, set up so customers can find you on Google.</p>
+              <ul class="tags">
+                <li>New builds</li><li>Redesigns</li><li>SEO basics</li><li>Fixes &amp; cleanups</li>
+              </ul>
             </div>
-            <h3>Websites</h3>
-            <p>Fast, mobile-friendly sites that turn visitors into calls, bookings and enquiries.</p>
-            <ul class="check-list">
-              <li>New builds &amp; redesigns</li>
-              <li>Click-to-call, maps, hours &amp; booking forms</li>
-              <li>Basic search (SEO) setup</li>
-              <li>Fixes, cleanups &amp; ongoing care</li>
-            </ul>
+            <div class="mini-browser" aria-hidden="true">
+              <div class="mb-bar"><span class="lock">&#128274;</span> yourbusiness.com</div>
+              <div class="mb-body">
+                <div class="scores">
+                  <div class="score"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.5"/><circle class="arc" cx="18" cy="18" r="15.5" style="--p:100"/></svg><b>100</b><small>Performance</small></div>
+                  <div class="score"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.5"/><circle class="arc" cx="18" cy="18" r="15.5" style="--p:98"/></svg><b>98</b><small>Accessibility</small></div>
+                  <div class="score"><svg viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.5"/><circle class="arc" cx="18" cy="18" r="15.5" style="--p:100"/></svg><b>100</b><small>SEO</small></div>
+                </div>
+                <div class="mb-lines"><span></span><span></span><span class="short"></span></div>
+                <div class="mb-btns"><span>&#9742; Call now</span><span>Book online</span></div>
+              </div>
+            </div>
           </article>
 
-          <article class="card service featured reveal">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
+          <!-- Automations -->
+          <article class="tile tile-auto reveal">
+            <p class="tile-label"><span class="ico">&#9889;</span> Automations</p>
+            <h3>Stop copy-pasting</h3>
+            <p>We connect your tools so quotes, bookings, invoices and stock updates happen on their own.</p>
+            <div class="pipeline" aria-hidden="true">
+              <span>Form</span><i></i><span>Quote</span><i></i><span>Booking</span><i></i><span class="hot">Invoice</span>
             </div>
-            <h3>Automations</h3>
-            <p>Stop copy-pasting. We connect your tools so routine tasks happen on their own.</p>
-            <ul class="check-list">
-              <li>Quote tools &amp; instant estimates</li>
-              <li>Booking &amp; invoice links</li>
-              <li>Inventory tracking</li>
-              <li>Custom internal tools</li>
-            </ul>
           </article>
 
-          <article class="card service reveal">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
-            </div>
-            <h3>Tech admin</h3>
-            <p>The behind-the-scenes setup that's easy to get wrong. We get it right.</p>
-            <ul class="check-list">
-              <li>Business email on your own domain</li>
-              <li>HTTPS / TLS certificates</li>
-              <li>Domain &amp; DNS setup</li>
-              <li>Google Business Profile</li>
-            </ul>
+          <!-- Admin -->
+          <article class="tile tile-admin reveal">
+            <p class="tile-label"><span class="ico">&#9881;</span> Tech admin</p>
+            <h3>The setup that's easy to get wrong</h3>
+            <pre class="dns" aria-label="Example DNS and certificate status"><code><span class="c">; yourbusiness.com</span>
+MX     <span class="v">mail ready</span>   <span class="ok">&#10003;</span>
+SPF    <span class="v">configured</span>   <span class="ok">&#10003;</span>
+DKIM   <span class="v">signed</span>       <span class="ok">&#10003;</span>
+TLS    <span class="v">auto-renew</span>   <span class="ok">&#10003;</span></code></pre>
+          </article>
+
+          <!-- Small tiles -->
+          <article class="tile tile-sm reveal">
+            <p class="big-num">you@</p>
+            <p>Professional email on your own domain, not <span class="mono">@gmail</span>.</p>
+          </article>
+          <article class="tile tile-sm reveal">
+            <p class="big-num">https://</p>
+            <p>The padlock customers trust, plus better Google ranking.</p>
+          </article>
+          <article class="tile tile-sm reveal">
+            <p class="big-num">&#9733; 5.0</p>
+            <p>Google Business Profile set up so you show on the map.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ FOUNDING CLIENT OFFER ============ -->
+    <!-- ============ FOUNDING CLIENT (TICKET) ============ -->
     <section class="section founding" id="founding">
       <div class="container">
-        <div class="founding-box reveal">
-          <div class="founding-copy">
-            <p class="badge">Limited &middot; only 2 spots</p>
-            <h2>Founding Client Program</h2>
-            <p class="founding-price">
-              <span class="free">Free</span>
-              <span class="was">normally <s>$2,000</s></span>
+        <div class="ticket reveal">
+          <div class="ticket-main">
+            <p class="kicker">// founding_client_program</p>
+            <h2>We'll build your website for free.</h2>
+            <p class="ticket-sub">
+              We're new and want to prove it with real results. Our first two clients get a complete
+              small-business website, normally <s>$2,000</s>, in exchange for honest feedback.
             </p>
-            <p>
-              We're new, and we want to prove ourselves with real results. Our first two clients get a
-              complete small-business website at no cost, in exchange for honest feedback and a few
-              things that help us grow.
-            </p>
-            <a href="#contact" class="btn btn-lime btn-lg" data-interest="Founding Client Program">Apply for a founding spot</a>
+
+            <div class="ticket-cols">
+              <div>
+                <h3><span class="mono plus">+</span> You get</h3>
+                <ul class="list">
+                  <li>Up to 5 mobile-friendly pages</li>
+                  <li>Click-to-call, map &amp; opening hours</li>
+                  <li>Contact or booking form</li>
+                  <li>Basic search (SEO) setup</li>
+                  <li>Google Business Profile review</li>
+                  <li>Existing content moved over</li>
+                  <li>30-minute training walkthrough</li>
+                  <li>2 rounds of revisions</li>
+                  <li>30 days of bug fixes</li>
+                </ul>
+              </div>
+              <div>
+                <h3><span class="mono minus">&harr;</span> You give</h3>
+                <ul class="list list-alt">
+                  <li>A Google review</li>
+                  <li>A short testimonial</li>
+                  <li>Case-study permission</li>
+                  <li>A 90-day results check-in</li>
+                  <li>Feedback within 5 days</li>
+                  <li>A referral (optional)</li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="founding-lists">
-            <div>
-              <h3>What you get</h3>
-              <ul class="check-list light">
-                <li>Up to 5 mobile-friendly pages</li>
-                <li>Click-to-call, map &amp; opening hours</li>
-                <li>Contact or booking form</li>
-                <li>Basic search (SEO) setup</li>
-                <li>Google Business Profile review</li>
-                <li>We move your existing content over</li>
-                <li>30-minute training walkthrough</li>
-                <li>2 rounds of revisions</li>
-                <li>30 days of bug fixes</li>
-              </ul>
+          <div class="ticket-stub">
+            <p class="stub-label">ADMIT</p>
+            <p class="stub-num">2</p>
+            <p class="stub-label">FOUNDING CLIENTS</p>
+            <div class="stub-price">
+              <b>$0</b>
+              <small>care plan after launch: $50&ndash;75/mo, optional</small>
             </div>
-            <div>
-              <h3>What we ask in return</h3>
-              <ul class="check-list light hollow">
-                <li>A Google review</li>
-                <li>A short testimonial</li>
-                <li>Permission to share it as a case study</li>
-                <li>A 90-day results check-in</li>
-                <li>Feedback within 5 days of each draft</li>
-                <li>A referral, if you're happy (optional)</li>
-              </ul>
-              <p class="fine">Optional ongoing care is available after launch at a founding rate of $50–75/month.</p>
-            </div>
+            <a href="#contact" class="btn btn-primary btn-block" data-interest="Founding Client Program">Claim a spot</a>
+            <div class="barcode" aria-hidden="true"></div>
           </div>
         </div>
       </div>
@@ -256,118 +235,104 @@
     <section class="section" id="pricing">
       <div class="container">
         <header class="section-head reveal">
-          <p class="kicker">Pricing</p>
-          <h2>Simple, upfront pricing</h2>
-          <p>No hourly surprises. You'll get a clear quote before any work begins.</p>
+          <p class="kicker">// pricing</p>
+          <h2>Clear prices. No surprises.</h2>
+          <p>Every project starts with a fixed quote, so you'll know the cost before we start.</p>
         </header>
 
-        <div class="pricing-group reveal">
-          <h3 class="group-title">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/></svg>
-            Websites
-          </h3>
-          <div class="cards-2">
-            <article class="card price-card">
-              <p class="plan">Site Job</p>
-              <p class="price">$600&ndash;750 <span>flat</span></p>
-              <p class="plan-desc">A focused project of about 5&ndash;7 hours of work.</p>
-              <ul class="check-list">
-                <li>Fixes &amp; bug cleanups</li>
-                <li>Site tidy-ups &amp; speed improvements</li>
-                <li>Template-based site build</li>
-                <li>Fixed price agreed upfront</li>
-              </ul>
-              <a href="#contact" class="btn btn-outline" data-interest="Site Job">Request a site job</a>
-            </article>
+        <div class="price-grid">
+          <article class="price reveal">
+            <p class="price-cat mono">website / one-off</p>
+            <h3>Site Job</h3>
+            <p class="amount">$600&ndash;750<span>flat</span></p>
+            <p class="price-desc">A focused 5&ndash;7 hour project.</p>
+            <ul class="list">
+              <li>Fixes &amp; bug cleanups</li>
+              <li>Tidy-ups &amp; speed boosts</li>
+              <li>Template-based site build</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block" data-interest="Site Job">Request a job</a>
+          </article>
 
-            <article class="card price-card">
-              <p class="plan">Website Care Plan</p>
-              <p class="price">$200 <span>/ month</span></p>
-              <p class="plan-desc">Peace of mind. We keep your site healthy, secure and up to date.</p>
-              <ul class="check-list">
-                <li>Software &amp; plugin updates</li>
-                <li>Regular backups</li>
-                <li>Small fixes &amp; content edits</li>
-                <li>Priority support</li>
-              </ul>
-              <a href="#contact" class="btn btn-outline" data-interest="Website Care Plan">Start a care plan</a>
-            </article>
-          </div>
+          <article class="price reveal">
+            <p class="price-cat mono">website / monthly</p>
+            <h3>Website Care</h3>
+            <p class="amount">$200<span>/mo</span></p>
+            <p class="price-desc">We keep your site healthy &amp; secure.</p>
+            <ul class="list">
+              <li>Updates &amp; backups</li>
+              <li>Small fixes &amp; edits</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block" data-interest="Website Care Plan">Start care plan</a>
+          </article>
+
+          <article class="price price-hot reveal">
+            <p class="price-badge mono">most impact</p>
+            <p class="price-cat mono">automation / project</p>
+            <h3>Automation Build</h3>
+            <p class="amount"><small>from</small>$2,250</p>
+            <p class="price-desc">Reclaim hours of manual work every week.</p>
+            <ul class="list">
+              <li>Quote tools &amp; estimators</li>
+              <li>Booking &amp; invoice links</li>
+              <li>Inventory tracking</li>
+              <li>Custom internal tools</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block" data-interest="Automation Build">Discuss a build</a>
+          </article>
+
+          <article class="price reveal">
+            <p class="price-cat mono">automation / monthly</p>
+            <h3>Automation Support</h3>
+            <p class="amount">$150<span>/mo</span></p>
+            <p class="price-desc">Keep it running as you grow.</p>
+            <ul class="list">
+              <li>Fixes when things break</li>
+              <li>Tweaks &amp; improvements</li>
+              <li>Ongoing monitoring</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block" data-interest="Automation Support">Add support</a>
+          </article>
         </div>
 
-        <div class="pricing-group reveal">
-          <h3 class="group-title">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg>
-            Automations
-          </h3>
-          <div class="cards-2">
-            <article class="card price-card highlight-card">
-              <p class="tag">Biggest time-saver</p>
-              <p class="plan">Automation Build</p>
-              <p class="price"><small>from</small> $2,250</p>
-              <p class="plan-desc">A custom system that removes hours of manual work every week.</p>
-              <ul class="check-list">
-                <li>Quote tools &amp; estimators</li>
-                <li>Booking &amp; invoice links</li>
-                <li>Inventory tracking</li>
-                <li>Custom internal tools</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary" data-interest="Automation Build">Discuss an automation</a>
-            </article>
-
-            <article class="card price-card">
-              <p class="plan">Automation Support</p>
-              <p class="price">$150 <span>/ month</span></p>
-              <p class="plan-desc">Keep your automations running smoothly as your business changes.</p>
-              <ul class="check-list">
-                <li>Fixes when something breaks</li>
-                <li>Tweaks &amp; small improvements</li>
-                <li>Ongoing monitoring</li>
-                <li>Direct support line</li>
-              </ul>
-              <a href="#contact" class="btn btn-outline" data-interest="Automation Support">Add support</a>
-            </article>
-          </div>
-        </div>
-
-        <div class="admin-banner reveal">
-          <div>
-            <h3>Need a quick tech admin task?</h3>
-            <p>Business email on your domain, HTTPS certificates, DNS records, domain transfers. Quoted per job, usually same-week.</p>
-          </div>
-          <a href="#contact" class="btn btn-primary" data-interest="Tech admin task">Get a quote</a>
+        <div class="admin-row reveal">
+          <p><span class="mono accent">&gt;</span> <b>Just need a quick admin task?</b> Business email, HTTPS, DNS or domain transfers, quoted per job and usually done the same week.</p>
+          <a href="#contact" class="btn btn-ghost" data-interest="Tech admin task">Get a quote &rarr;</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ PROCESS ============ -->
-    <section class="section alt" id="process">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="kicker">How it works</p>
-          <h2>From first chat to launch in four steps</h2>
+    <!-- ============ PROCESS (TIMELINE) ============ -->
+    <section class="section" id="process">
+      <div class="container process-grid">
+        <header class="section-head left reveal">
+          <p class="kicker">// process</p>
+          <h2>From first chat to launch</h2>
+          <p>A simple, transparent process. You always know what's happening and what's next.</p>
+          <a href="#contact" class="btn btn-primary">Start step 01</a>
         </header>
 
-        <ol class="steps">
+        <ol class="timeline">
           <li class="reveal">
-            <span class="step-num">01</span>
+            <span class="t-step mono">step_01</span>
             <h3>Free consultation</h3>
             <p>A short call to understand your business, what's slowing you down, and what you want to achieve.</p>
           </li>
           <li class="reveal">
-            <span class="step-num">02</span>
-            <h3>Clear proposal</h3>
-            <p>A fixed quote with exactly what's included and a timeline. No jargon, no surprises.</p>
+            <span class="t-step mono">step_02</span>
+            <h3>Fixed proposal</h3>
+            <p>A clear quote with exactly what's included and a timeline. No jargon, no surprises.</p>
           </li>
           <li class="reveal">
-            <span class="step-num">03</span>
+            <span class="t-step mono">step_03</span>
             <h3>Build &amp; review</h3>
             <p>We build it, share progress, and refine it with your feedback until it's right.</p>
           </li>
           <li class="reveal">
-            <span class="step-num">04</span>
+            <span class="t-step mono">step_04</span>
             <h3>Launch &amp; support</h3>
-            <p>We go live, walk you through everything, and stay on hand for fixes and care.</p>
+            <p>We go live, train you up, and stay on hand for fixes and ongoing care.</p>
           </li>
         </ol>
       </div>
@@ -376,44 +341,33 @@
     <!-- ============ ABOUT ============ -->
     <!-- TEMPLATE: replace the bracketed text with your own story. -->
     <section class="section" id="about">
-      <div class="container about-grid">
-        <div class="about-photo reveal">
-          <!-- Swap this placeholder for a real photo: <img src="images/founder.jpg" alt="[Your name], founder of New Leaf Software"> -->
-          <div class="photo-placeholder">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-            <span>Your photo here</span>
+      <div class="container">
+        <div class="about reveal">
+          <div class="about-photo">
+            <!-- Swap for: <img src="images/founder.jpg" alt="[Your name], founder of New Leaf Software"> -->
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+              <span class="mono">your_photo.jpg</span>
+            </div>
           </div>
-          <div class="about-stat">
-            <b>[X]+ years</b>
-            <small>building for the web</small>
-          </div>
-        </div>
-        <div class="about-copy reveal">
-          <p class="kicker">About us</p>
-          <h2>Technology that works for you, not the other way around</h2>
-          <p>
-            New Leaf Software was founded on a simple idea: small businesses deserve the same quality
-            of technology as big companies, without the big-company price tag or confusing jargon.
-          </p>
-          <p>
-            [Founder name] started New Leaf after [a sentence about your background, e.g. "years of
-            helping local businesses untangle their websites and spreadsheets"]. Today we help
-            [type of clients, e.g. "trades, shops and service businesses"] look great online and
-            reclaim hours every week through smart automation.
-          </p>
-          <div class="values">
-            <div>
-              <h4>Honest</h4>
-              <p>Clear prices, straight answers, and no work you don't need.</p>
-            </div>
-            <div>
-              <h4>Reliable</h4>
-              <p>We do what we say, when we say, and we stay after launch.</p>
-            </div>
-            <div>
-              <h4>Yours</h4>
-              <p>You own your site, domain and data. No lock-in, ever.</p>
-            </div>
+          <div class="about-copy">
+            <p class="kicker">// about</p>
+            <h2>Big-company tech, without the big-company price.</h2>
+            <p>
+              New Leaf Software exists because small businesses deserve technology that just works:
+              no confusing jargon, no bloated agency invoices, no getting locked in.
+            </p>
+            <p>
+              [Founder name] started New Leaf after [a sentence about your background, e.g. "years of
+              helping local businesses untangle their websites and spreadsheets"]. Today we help
+              [type of clients, e.g. "trades, shops and service businesses"] look great online and win
+              back hours every week.
+            </p>
+            <dl class="values">
+              <div><dt>Honest</dt><dd>Clear prices and straight answers.</dd></div>
+              <div><dt>Reliable</dt><dd>We do what we say, and stay after launch.</dd></div>
+              <div><dt>Yours</dt><dd>You own everything. No lock-in, ever.</dd></div>
+            </dl>
           </div>
         </div>
       </div>
@@ -421,38 +375,34 @@
 
     <!-- ============ TESTIMONIALS ============ -->
     <!-- TEMPLATE: replace each quote, name and business with real testimonials. -->
-    <section class="section alt" id="testimonials">
+    <section class="section" id="testimonials">
       <div class="container">
         <header class="section-head reveal">
-          <p class="kicker">Testimonials</p>
-          <h2>What clients say</h2>
+          <p class="kicker">// testimonials</p>
+          <h2>Don't just take our word for it</h2>
         </header>
 
-        <div class="cards-3">
-          <figure class="card quote reveal">
-            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote>&ldquo;[Testimonial text. What problem did they have, what did you do, and what changed for their business?]&rdquo;</blockquote>
+        <div class="quotes">
+          <figure class="quote quote-lg reveal">
+            <blockquote>&ldquo;[Your strongest testimonial goes here. What problem did they have, what did you do, and what changed for their business?]&rdquo;</blockquote>
             <figcaption>
               <span class="avatar">AB</span>
               <span><b>[Client name]</b><small>[Role], [Business name]</small></span>
+              <span class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             </figcaption>
           </figure>
-
-          <figure class="card quote reveal">
-            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-            <blockquote>&ldquo;[Testimonial text. Specific results work best, e.g. "we now get X more calls a week" or "saves us X hours on invoicing."]&rdquo;</blockquote>
+          <figure class="quote reveal">
+            <blockquote>&ldquo;[Testimonial text. Specific results work best, e.g. "saves us X hours a week on invoicing."]&rdquo;</blockquote>
             <figcaption>
               <span class="avatar">CD</span>
-              <span><b>[Client name]</b><small>[Role], [Business name]</small></span>
+              <span><b>[Client name]</b><small>[Business name]</small></span>
             </figcaption>
           </figure>
-
-          <figure class="card quote reveal">
-            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <figure class="quote reveal">
             <blockquote>&ldquo;[Testimonial text. Mention what it was like working with you: communication, speed, ease.]&rdquo;</blockquote>
             <figcaption>
               <span class="avatar">EF</span>
-              <span><b>[Client name]</b><small>[Role], [Business name]</small></span>
+              <span><b>[Client name]</b><small>[Business name]</small></span>
             </figcaption>
           </figure>
         </div>
@@ -461,11 +411,10 @@
 
     <!-- ============ FAQ ============ -->
     <section class="section" id="faq">
-      <div class="container faq-wrap">
-        <header class="section-head left reveal">
-          <p class="kicker">FAQ</p>
-          <h2>Common questions</h2>
-          <p>Something else on your mind? <a href="#contact">Just ask</a>.</p>
+      <div class="container narrow">
+        <header class="section-head reveal">
+          <p class="kicker">// faq</p>
+          <h2>Questions, answered</h2>
         </header>
 
         <div class="faq reveal">
@@ -503,105 +452,84 @@
 
     <!-- ============ CONTACT ============ -->
     <section class="section contact" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-copy reveal">
-          <p class="kicker light">Get in touch</p>
-          <h2>Ready to turn over a new leaf?</h2>
-          <p>Tell us a little about your business and what you need. We'll reply within one business day with next steps, and the first consultation is always free.</p>
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <p class="kicker">// contact</p>
+            <h2>Let's turn over a new leaf.</h2>
+            <p>Tell us about your business and what you need. We'll reply within one business day, and the first consultation is always free.</p>
 
-          <a class="contact-email" href="mailto:hello@newleafsoftware.com">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg>
-            hello@newleafsoftware.com
-          </a>
+            <a class="contact-email" href="mailto:hello@newleafsoftware.com">
+              <span class="mono">mailto:</span>hello@newleafsoftware.com
+            </a>
 
-          <ul class="contact-points">
-            <li>Free, no-obligation consultation</li>
-            <li>Reply within 1 business day</li>
-            <li>Fixed quotes before any work begins</li>
-          </ul>
-        </div>
-
-        <!--
-          CONTACT FORM SETUP:
-          1. Create a free form at https://formspree.io
-          2. Replace YOUR_FORM_ID below with your form's ID.
-          Until then, submitting opens the visitor's email app as a fallback.
-        -->
-        <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-          <div class="field-row">
-            <label>
-              <span>Your name</span>
-              <input type="text" name="name" autocomplete="name" required>
-            </label>
-            <label>
-              <span>Business name</span>
-              <input type="text" name="business" autocomplete="organization">
-            </label>
+            <ul class="list">
+              <li>Free, no-obligation consultation</li>
+              <li>Reply within 1 business day</li>
+              <li>Fixed quote before any work begins</li>
+            </ul>
           </div>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" autocomplete="email" required>
-          </label>
-          <label>
-            <span>I'm interested in</span>
-            <select name="interest" id="interest">
-              <option>Founding Client Program</option>
-              <option>New website</option>
-              <option>Site Job</option>
-              <option>Website Care Plan</option>
-              <option>Automation Build</option>
-              <option>Automation Support</option>
-              <option>Tech admin task</option>
-              <option>Not sure yet</option>
-            </select>
-          </label>
-          <label>
-            <span>Tell us about your project</span>
-            <textarea name="message" rows="5" required placeholder="What does your business do, and what would you like help with?"></textarea>
-          </label>
-          <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <button type="submit" class="btn btn-lime btn-lg btn-block">Send message</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-        </form>
+
+          <!--
+            CONTACT FORM SETUP:
+            1. Create a free form at https://formspree.io
+            2. Replace YOUR_FORM_ID below with your form's ID.
+            Until then, submitting opens the visitor's email app as a fallback.
+          -->
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <div class="field-row">
+              <label><span>name</span><input type="text" name="name" autocomplete="name" required></label>
+              <label><span>business</span><input type="text" name="business" autocomplete="organization"></label>
+            </div>
+            <label><span>email</span><input type="email" name="email" autocomplete="email" required></label>
+            <label>
+              <span>interested_in</span>
+              <select name="interest" id="interest">
+                <option>Founding Client Program</option>
+                <option>New website</option>
+                <option>Site Job</option>
+                <option>Website Care Plan</option>
+                <option>Automation Build</option>
+                <option>Automation Support</option>
+                <option>Tech admin task</option>
+                <option>Not sure yet</option>
+              </select>
+            </label>
+            <label>
+              <span>message</span>
+              <textarea name="message" rows="5" required placeholder="What does your business do, and what would you like help with?"></textarea>
+            </label>
+            <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="#top" class="brand light">
-          <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
-            <rect width="32" height="32" rx="9" fill="currentColor"/>
-            <path d="M9 23c0-8 5-13 14-14-.5 9-5.5 14-14 14Z" fill="#b7f26b"/>
-            <path d="M9 23l8-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          </svg>
-          <span>New Leaf <strong>Software</strong></span>
-        </a>
-        <p>Websites, automations and tech admin for small businesses.</p>
-      </div>
-      <div>
-        <h4>Services</h4>
-        <a href="#services">Websites</a>
-        <a href="#services">Automations</a>
-        <a href="#services">Tech admin</a>
-      </div>
-      <div>
-        <h4>Company</h4>
-        <a href="#about">About</a>
+    <div class="container footer-top">
+      <a href="#top" class="brand">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M6 26C6 14 13 6 27 5c-1 14-8 21-21 21Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M6 26 18 14" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <span>newleaf<span class="brand-dim">.software</span></span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
+        <a href="#about">About</a>
         <a href="#faq">FAQ</a>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <a href="mailto:hello@newleafsoftware.com">hello@newleafsoftware.com</a>
-        <a href="#contact">Send a message</a>
-      </div>
+        <a href="mailto:hello@newleafsoftware.com">Email</a>
+      </nav>
     </div>
+    <p class="footer-word" aria-hidden="true">new leaf</p>
     <div class="container footer-bottom">
-      <p>&copy; <span id="year">2026</span> New Leaf Software. All rights reserved.</p>
-      <a href="#top">Back to top &uarr;</a>
+      <p>&copy; <span id="year">2026</span> New Leaf Software</p>
+      <p class="mono status"><span class="status-dot"></span> all systems operational</p>
     </div>
   </footer>
 
