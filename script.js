@@ -1,4 +1,4 @@
-// New Leaf Software: site interactions
+// LeafWorks Software: site interactions
 (function () {
   document.documentElement.classList.add('js');
 
@@ -59,7 +59,7 @@
   });
 
   // Contact form
-  var EMAIL = 'hello@newleafsoftware.com';
+  var EMAIL = 'hello@leafworkssoftware.ca';
   var form = document.getElementById('contact-form');
   var status = form.querySelector('.form-status');
   var submit = form.querySelector('button[type="submit"]');
